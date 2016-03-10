@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="item_count" format="integer"></attr>
+    <attr name="hcount" format="integer"></attr>
+    <attr name="xcount" format="integer"></attr>
+
+    <declare-styleable name="ChartViewHeart">
+        <attr name="hcount" />
+    </declare-styleable>
+    <declare-styleable name="ChartHeart">
+        <attr name="xcount" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+    </declare-styleable>
+
+</resources>

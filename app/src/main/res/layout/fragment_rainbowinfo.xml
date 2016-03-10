@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/background_vp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/rainbow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="   当今科技的发展日新月异，人们对信息的需求越来越高，但是，传统电脑结构越来越复杂，配置和价格越来越高，利用率越来越低，操作难度越来越大。为促进我国信息化建设快速发展，解决当前人们进入计算机领域面临的价格和知识两大门槛高的难题，并最终形成全部国产软硬件自主知识产权、打破英特尔和微软等国外IT巨头企业对我国信息产业的垄断。山东大学与国家信息通信国际创新园、山东信息通信技术研究院，在深入研究国际、国内IT产业发展的基础上，于2008年在国内率先提出、并于2009年实施了以“云计算服务器+宽带网络+多媒体瘦客户端”为基本架构的未来信息化新模式，简称“中国虹计划”。"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

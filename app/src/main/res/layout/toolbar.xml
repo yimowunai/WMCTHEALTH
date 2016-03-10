@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/toolbar_rightButton"
+        style="@android:style/Widget.Material.Toolbar.Button.Navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/loader_selector"
+        android:drawableRight="@drawable/loader"
+        android:text="登录"
+        android:textSize="30sp"
+        android:visibility="visible" />/>
+
+    <!--<ImageButton
+
+        android:id="@+id/toolbar_rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loader_selector"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        style="@android:style/Widget.Material.Toolbar.Button.Navigation"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="30sp"
+        android:layout_toLeftOf="@id/toolbar_rightButton"
+        android:layout_marginTop="10dp"/>-->
+
+</RelativeLayout>

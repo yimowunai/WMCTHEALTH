@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB7BAB7"
+    android:orientation="vertical">
+
+    <com.wmct.ui.MyToobar
+        android:id="@+id/toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/aquamarine_blue"
+        android:minHeight="20dp"
+
+        >
+
+    </com.wmct.ui.MyToobar>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkcyan"
+        android:gravity="center_horizontal"
+        android:text="欢迎使用"
+        android:textColor="@color/white"
+        android:textSize="90sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="475dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/displaybackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="100dp"
+                    android:text="您好！您此次测量的结果为："
+                    android:textColor="@color/darkcyan"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="高压 ："
+                        android:textColor="@color/darkcyan"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/hPresure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="**"
+                        android:textColor="@color/red"
+                        android:textSize="60sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="低压 ："
+                        android:textColor="@color/darkcyan"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/lPresure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="**"
+                        android:textColor="@color/red"
+                        android:textSize="60sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="心率 ："
+                        android:textColor="@color/darkcyan"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/hRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="**"
+                        android:textColor="@color/red"
+                        android:textSize="60sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chinarainbow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="中国虹计划"
+                android:textColor="@color/darkcyan"
+                android:textSize="90sp" />
+
+            <TextView
+                android:id="@+id/measuresystem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="血压心率测量系统"
+                android:textColor="@color/darkcyan"
+                android:textSize="90sp" />
+
+            <LinearLayout
+                android:layout_width="630dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/about_us"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="关于我们："
+                    android:textColor="@color/darkcyan"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="        中国虹计划是一种“瘦客户端+宽带网+云计算服务平台”的新型信息化模式，
+                    自2008年起由山东大学袁东风教授带领团队研发。"
+                    android:textColor="@color/darkcyan"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="        地址：山东省济南市历城区山大南路27号"
+                    android:textColor="@color/darkcyan"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="        邮箱：peter_zhang@sdu.edu.cn"
+                    android:textColor="@color/darkcyan"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

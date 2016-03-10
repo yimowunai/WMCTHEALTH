@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="330dp"
+    android:background="@drawable/background_frame"
+    >
+    <RelativeLayout
+        android:id="@+id/ralate_choice_icon"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请选择头像"
+            android:textSize="20sp"
+            android:textColor="@color/aquamarine_blue"/>
+        <TextView
+            android:id="@+id/tx_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳过"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            /></RelativeLayout>
+
+    <GridView
+        android:id="@+id/gd_head_choice"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:horizontalSpacing="10dp"
+        android:layout_below="@id/ralate_choice_icon"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:layout_gravity="center"
+        android:scrollbars="none"></GridView>
+</RelativeLayout>

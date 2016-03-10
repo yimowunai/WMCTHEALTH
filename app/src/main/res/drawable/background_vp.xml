@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:shape="rectangle">
+   <solid android:color="@android:color/holo_blue_dark"></solid>
+     <!--<gradient
+
+        android:angle="180"
+        android:startColor="#44FFFFFF"
+        android:endColor="#FFDDDDFF"
+       />-->
+
+    <stroke
+        android:dashGap="0dp"
+        android:width="4dp"
+        android:color="@android:color/white" />
+    <!--
+  设置圆角
+  注意：	bottomRightRadius是左下角而不是右下角  bottomLeftRadius右下角
+    -->
+    <corners
+        android:radius="20dp" />
+</shape>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/layout_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.wmct.ui.ClearEditText
+            android:id="@+id/et_input_phone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/input_phone" />
+
+        <com.wmct.ui.ClearEditText
+            android:id="@+id/et_input_old_pwd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/input_old_pwd"
+            android:inputType="textPassword" />
+
+        <com.wmct.ui.ClearEditText
+            android:id="@+id/et_input_new_pwd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/input_new_pwd"
+            android:inputType="textPassword" />
+
+        <com.wmct.ui.ClearEditText
+            android:id="@+id/et_input_new_pwd_again"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/input_new_pwd_again"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/bt_finish"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_bt"
+            android:text="@string/finish"
+            android:textColor="@color/paleturquoise"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/aquamarine_blue"
+        android:text="@string/title_modifi_pwd"
+        android:textSize="30sp" />
+</RelativeLayout>

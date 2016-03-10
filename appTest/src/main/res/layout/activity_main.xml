@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff10ff97"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorAccent">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/family_or_member_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="-80dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/user_manager"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/family_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/family_manager_text"
+                android:padding="10dp"
+                android:text="用户管理"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/modify_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/modify_pwd_text"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="修改密码"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/member_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/member_manager_text"
+                android:padding="10dp"
+                android:text="成员管理"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/family_or_member_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/family_or_member_manager"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/members"
+                android:layout_width="660dp"
+                android:layout_height="400dp">
+
+            </android.support.v4.view.ViewPager>
+
+
+            <LinearLayout
+                android:id="@+id/family_or_member_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/family_or_member_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/memberimage"
+                    android:text="编辑" />
+
+                <Button
+                    android:id="@+id/family_or_member_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/memberimage"
+                    android:text="保存"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/family_or_member_info"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/family_or_member_manager"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </RadioGroup>
+    </RelativeLayout>
+
+
+</LinearLayout>

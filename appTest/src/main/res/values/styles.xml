@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorPrimary">#4876ff</item>
+        <item name="android:colorPrimaryDark">#ffcd331a</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:searchViewStyle">@style/MySearchView</item>
+
+    </style>
+
+    <style name="MySearchView" parent="Widget.AppCompat.SearchView"></style>
+
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <solid android:color="@color/powderblue"/>
+    <!-- <gradient
+
+        android:angle="180"
+        android:startColor="#44FFFFFF"
+        android:endColor="#FFDDDDFF"
+       />-->
+
+    <!--
+  设置圆角
+  注意：	bottomRightRadius是左下角而不是右下角  bottomLeftRadius右下角
+    -->
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+</shape>

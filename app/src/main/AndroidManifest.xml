@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wmct.health">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".HealthApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.wmct.activity.AppStart"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.wmct.activity.MainActivity"></activity>
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name="com.wmct.activity.VisitorMeasureActivity"></activity>
+        <activity
+            android:name="com.wmct.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/login_dialog"></activity>
+        <activity android:name="com.wmct.activity.MobileResetPwdActivity"></activity>
+        <activity android:name="com.wmct.activity.MoblieRegisterActivity"></activity>
+        <activity android:name="com.wmct.activity.ModifiPwdActivity"></activity>
+        <activity android:name="com.wmct.activity.ResetPwdActivity"></activity>
+        <activity android:name="com.wmct.activity.UserInfoRegisterActivity"></activity>
+        <activity android:name="com.wmct.activity.PersonCenter"></activity>
+        <activity android:name="com.wmct.activity.AboutUsActivity"></activity>
+        <activity
+            android:name="com.wmct.activity.AddMemberActivity"
+            android:theme="@style/login_dialog"></activity>
+        <activity
+            android:name="com.wmct.activity.ChoiceHeadIconActivity"
+            android:theme="@style/login_dialog"></activity>
+
+        <service android:name="com.wmct.service.UploadDataService"></service>
+        <service android:name="com.wmct.service.DownDataService"></service>
+    </application>
+
+</manifest>
